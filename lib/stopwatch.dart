@@ -17,11 +17,6 @@ class _StopwatchState extends State<Stopwatch> {
   );
 
   @override
-  void initState() {
-    super.initState();
-  }
-
-  @override
   void dispose() async {
     super.dispose();
     await _stopWatchTimer.dispose();
@@ -53,7 +48,6 @@ class _StopwatchState extends State<Stopwatch> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
         title: Text(
           widget.title,
           style: const TextStyle(fontWeight: FontWeight.bold),
@@ -89,7 +83,6 @@ class _StopwatchState extends State<Stopwatch> {
           SizedBox(height: 50),
         ],
       ),
-      backgroundColor: Colors.white,
     );
   }
 }
